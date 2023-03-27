@@ -27,7 +27,7 @@ function AccordionDivider({ text, icon }) {
 
   return (
     <div css={DividerCSS} aria-label="Divider">
-      {icon && <Dashicon icon={icon} />} {text}
+      {icon ? <Dashicon icon={icon} /> : null} {text}
     </div>
   )
 }
